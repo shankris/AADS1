@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+    
+  <div
+  class="accordion"
+  id="multiple"
+  data-allow-toggle="true"
+  data-allow-multiple="true"
+ >
+   <div class="accordion__group">
+     <h3 class="accordion__header">
+       <button
+         class="accordion__trigger"
+         id="multiple-trigger-1"
+         aria-controls="multiple-panel-1"
+         aria-expanded="true"
+       >
+         <span class="accordion__title">Sales History</span>
+         <span class="accordion__arrow" aria-hidden="true"></span>
+       </button>
+     </h3>
+     <div 
+       class="accordion__panel accordion__panel_expanded"
+       role="region"
+       id="multiple-panel-1"
+       aria-labelledby="multiple-trigger-1"
+     >
+       <div class="accordion__panel-inner">
+
+            <table class="data1">
+                    <tr>
+                      <th>Book / Page</th>
+                      <th>Sale Date</th>
+                      <th>Deed Instrument</th>
+                    </tr>
+                    <tr>
+                      <td>Lorem</td>
+                      <td>10/10/2015</td>
+                      <td>Cash</td>
+                    </tr>
+                    <tr>
+                      <td>Lorem</td>
+                      <td>10/10/2015</td>
+                      <td>Cash</td>
+                    </tr>
+                    <tr>
+                      <td>Lorem</td>
+                      <td>10/10/2015</td>
+                      <td>Cash</td>
+                    </tr>
+                  </table>
+            
+
+       </div>
+     </div>
+   </div>
+
+   <div class="accordion__group">
+     <h3 class="accordion__header">
+       <button
+         class="accordion__trigger"
+         id="multiple-trigger-2"
+         aria-controls="multiple-panel-2"
+         aria-expanded="false"
+       >
+         <span class="accordion__title">Tax Information</span>
+         <span class="accordion__arrow" aria-hidden="true"></span>
+       </button>
+     </h3>
+     <div 
+       class="accordion__panel"
+       role="region"
+       id="multiple-panel-2"
+       aria-labelledby="multiple-trigger-2"
+     >
+       <div class="accordion__panel-inner">
+
+        
+          <div class="fieldSet">
+            <div class="fieldName">Mailing Address</div>
+            <div class="fieldValue">279 Transport Park, Dallas, TX 75397</div>
+          </div>
+        
+          <div class="fieldSet">
+            <div class="fieldName">Mailage Code</div>
+            <div class="fieldValue">343-75397</div>
+          </div>
+        
+          <div class="fieldSet">
+            <div class="fieldName">Legal Description</div>
+            <div class="fieldValue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel delectus voluptatibus quas fugit tenetur sequi, recusandae, quasi laudantium accusamus cumque cum! Quis sapiente delectus dignissimos aut? Excepturi impedit ducimus odit?</div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+       </div>
+     </div>
+   </div>
+
+   <div class="accordion__group">
+     <h3 class="accordion__header">
+       <button
+         class="accordion__trigger"
+         id="multiple-trigger-3"
+         aria-controls="multiple-panel-3"
+         aria-expanded="false"
+       >
+         <span class="accordion__title">AD Valerom Taxes</span>
+         <span class="accordion__arrow" aria-hidden="true"></span>
+       </button>
+     </h3>
+     <div 
+       class="accordion__panel"
+       role="region"
+       id="multiple-panel-3"
+       aria-labelledby="multiple-trigger-3"
+     >
+       <div class="accordion__panel-inner">
+
+
+            <table class="data1">
+                    <tr>
+                      <th>Code</th>
+                      <th>Taxing Authority</th>
+                      <th class="num">Assessed Value</th>
+                      <th class="num">Exemption Amount</th>
+                      <th class="num">Taxable Value</th>
+                      <th class="num">Milage Rate</th>
+                      <th class="num">Taxes</th>
+                    </tr>
+                    <tr>
+                      <td>3459078</td>
+                      <td>City County</td>
+                      <td class="num">200,000</td>
+                      <td class="num">50,000</td>
+                      <td class="num">20,000</td>
+                      <td class="num">35</td>
+                      <td class="num">3,000</td>
+                    </tr>
+                    <tr>
+                      <td>3459078</td>
+                      <td>City County</td>
+                      <td class="num">200,000</td>
+                      <td class="num">50,000</td>
+                      <td class="num">20,000</td>
+                      <td class="num">35</td>
+                      <td class="num">3,000</td>
+                    </tr>
+                    <tr>
+                      <td>3459078</td>
+                      <td>City County</td>
+                      <td class="num">200,000</td>
+                      <td class="num">50,000</td>
+                      <td class="num">20,000</td>
+                      <td class="num">35</td>
+                      <td class="num">3,000</td>
+                    </tr>
+                    </table>
+            
+        
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+      
+
+
+
+
+   <div class="accordion__group">
+        <h3 class="accordion__header">
+          <button
+            class="accordion__trigger"
+            id="multiple-trigger-4"
+            aria-controls="multiple-panel-4"
+            aria-expanded="false"
+          >
+            <span class="accordion__title">Non - AD Valerom Taxes</span>
+            <span class="accordion__arrow" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div 
+          class="accordion__panel"
+          role="region"
+          id="multiple-panel-3"
+          aria-labelledby="multiple-trigger-4"
+        >
+          <div class="accordion__panel-inner">
+                <table class="data1">
+                <tr>
+                    <th>Levying Code</th>
+                    <th>Levying Authority</th>
+                    <th class="num">Taxes</th>
+                </tr>
+                <tr>
+                    <td>3459078</td>
+                    <td>City County</td>
+                    <td class="num">3,000</td>
+                </tr>
+                <tr>
+                    <td>3459078</td>
+                    <td>City County</td>
+                    <td class="num">3,000</td>
+                </tr>
+                <tr>
+                    <td>3459078</td>
+                    <td>City County</td>
+                    <td class="num">3,000</td>
+                </tr>
+                </table>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      
+
+
+
+
+
+   <div class="accordion__group">
+        <h3 class="accordion__header">
+          <button
+            class="accordion__trigger"
+            id="multiple-trigger-5"
+            aria-controls="multiple-panel-5"
+            aria-expanded="false"
+          >
+            <span class="accordion__title">Taxes Due</span>
+            <span class="accordion__arrow" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div 
+          class="accordion__panel"
+          role="region"
+          id="multiple-panel-3"
+          aria-labelledby="multiple-trigger-5"
+        >
+          <div class="accordion__panel-inner">
+                <table class="data1">
+                        <tr>
+                          <th>Account</th>
+                          <th>Folio</th>
+                          <th class="num">Taxes</th>
+                          <th class="num">Fees</th>
+                          <th class="num">Interest</th>
+                          <th class="num">Discount</th>
+                          <th class="num">Paid</th>
+                          <th class="num">Due Date</th>
+                          <th class="num">Amount Due</th>
+                        </tr>
+          
+                        <tr>
+                          <td>3459078</td>
+                          <td>ADE - 33467</td>
+                          <td class="num">1,100</td>
+                          <td class="num">300</td>
+                          <td class="num">1,000</td>
+                          <td class="num">300</td>
+                          <td class="num">10/10/2019</td>
+                          <td class="num">340</td>
+                        </tr>
+          
+                        <tr>
+                            <td>3459078</td>
+                            <td>ADE - 33467</td>
+                            <td class="num">1,100</td>
+                            <td class="num">300</td>
+                            <td class="num">300</td>
+                            <td class="num">1,000</td>
+                            <td class="num">300</td>
+                            <td class="num">10/10/2019</td>
+                            <td class="num">340</td>
+                        </tr>
+          
+                        <tr>
+                          <td>3459078</td>
+                          <td>ADE - 33467</td>
+                          <td class="num">1,100</td>
+                          <td class="num">300</td>
+                          <td class="num">300</td>
+                          <td class="num">1,000</td>
+                          <td class="num">300</td>
+                          <td class="num">10/10/2019</td>
+                          <td class="num">340</td>
+                        </tr>
+                        </table>
+                         
+           
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      
+
+
+
+
+
+      <div class="accordion__group">
+            <h3 class="accordion__header">
+              <button
+                class="accordion__trigger"
+                id="multiple-trigger-6"
+                aria-controls="multiple-panel-6"
+                aria-expanded="false"
+              >
+                <span class="accordion__title">If Paid By</span>
+                <span class="accordion__arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div 
+              class="accordion__panel"
+              role="region"
+              id="multiple-panel-3"
+              aria-labelledby="multiple-trigger-6"
+            >
+              <div class="accordion__panel-inner">
+
+                    <table class="data1">
+                            <tr>
+                              <th>Taxes</th>
+                              <th>Fees</th>
+                              <th class="num">Interest</th>
+                              <th class="num">Discount</th>
+                              <th class="num">If Paid By</th>
+                              <th class="num">Milage Rate</th>
+                              <th class="num">Ammount Due</th>
+                            </tr>
+                            <tr>
+                              <td class="num">3,000</td>
+                              <td class="num">200</td>
+                              <td class="num">125</td>
+                              <td class="num">210</td>
+                              <td class="num">10/10/2019</td>
+                              <td class="num">10.5%</td>
+                              <td class="num">12,050</td>
+                            </tr>
+                            <tr>
+                              <td class="num">3,000</td>
+                              <td class="num">200</td>
+                              <td class="num">125</td>
+                              <td class="num">210</td>
+                              <td class="num">10/10/2019</td>
+                              <td class="num">10.5%</td>
+                              <td class="num">12,050</td>
+                            </tr>
+                            <tr>
+                              <td class="num">3,000</td>
+                              <td class="num">200</td>
+                              <td class="num">125</td>
+                              <td class="num">210</td>
+                              <td class="num">10/10/2019</td>
+                              <td class="num">10.5%</td>
+                              <td class="num">12,050</td>
+                            </tr>
+                            </table>
+                    
+
+              </div>
+            </div>
+          </div>
+    
+    
+
+
+
+
+
+
+</div>
+</div>
+
+<script src="js/accordion.js"></script>
+
+</body>
+</html>

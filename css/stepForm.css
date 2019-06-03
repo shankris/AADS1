@@ -1,0 +1,185 @@
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  padding: 14px 50px;
+  border-radius: 4px;
+  background-color: #37B595;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 22px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+button.main:hover {
+  background-color: #1A7F75;
+}
+button.previous {
+  background-color: #A2ACAF;
+}
+button.previous:hover {
+  background-color: #5A5F61;
+}
+
+.full-width-container {
+  width: 100%;
+  min-width: 320px;
+}
+
+.sized-container {
+  max-width: 900px;
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+.slide-container {
+  position: relative;
+  left: 0;
+  /* overflow: hidden; */
+}
+
+.slide {
+  float: left;
+  list-style-type: none;
+  height:400px;
+}
+.slide .sized-container {
+  /* padding: 75px 25px; */
+}
+
+.button-container {
+  border-top: 1px solid rgb(168, 168, 168);
+  /* overflow: hidden; */
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  background: #fafafa;
+}
+.button-container button {
+  float: right;
+  margin-left: 30px;
+}
+
+.pagination-container {
+  margin-top: 40px;
+}
+
+.pagination {
+  width: 100%;
+  text-align: center;
+  padding: 0 4px;
+}
+
+.indicator {
+  width: 25px;
+  height: 25px;
+  border: 4px solid lightgray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s;
+  position: relative;
+}
+.indicator .tag {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: lightgray;
+  white-space: nowrap;
+}
+.indicator.active, .indicator.complete {
+  border-color: #37B595;
+}
+.indicator.active .tag, .indicator.complete .tag {
+  color: #A4A4A4;
+  font-weight: 300;
+}
+.indicator.complete:after {
+  content: "✓";
+  position: absolute;
+  color: #666;
+  left: 4px;
+  top: -5px;
+  font-size: 22px;
+}
+
+.progress-bar-container {
+  width: 10%;
+  height: 4px;
+  display: inline-block;
+  background-color: lightgray;
+  position: relative;
+  top: -13px;
+}
+.progress-bar-container:last-of-type {
+  display: none;
+}
+.progress-bar-container .progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #37B595;
+}
+
+.stepFormTitle {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color:rgb(136, 136, 136);
+}
+
+.formField {
+  display:inline-block;
+  padding: 0 25px 0 0px;
+}
+.formField.right {
+  float:left;
+}
+
+
+.formFieldBlock {
+  display:block;
+  background-color: rgb(241, 241, 241);
+  margin: 8px 0;
+  padding: 12px;
+  height:45px;
+}
+
+
+
+.formFieldBlock .quest1{
+  color:rgb(53, 53, 53);
+  overflow:auto;
+}
+
+
+.formFieldBlock .quest2 {
+  padding: 0 0px 12px 0px;
+  color:rgb(148, 147, 147);
+  font-size:14px;
+  /* margin:0 0 0 5px; */
+  line-height: 1.1;
+
+}
+
+.formFieldBlock .radiobtn {
+  font-size:14px;
+  width:400px;
+  color:#5A5F61;
+}
+
+.ans {
+  float:left;
+  width:150px;
+  padding:6px 0 0 0;
+}
+
+.quest {
+  width:700px;
+  /* border: 1px solid #ddd; */
+  float:left;
+}

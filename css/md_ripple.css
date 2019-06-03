@@ -1,0 +1,136 @@
+
+  .radio-group {
+    margin-top: 50px;
+  }
+  .radio-group::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .radio-group h2 {
+    font-weight: 300;
+  }
+  
+  .radiobox {
+    float: left;
+    width: auto;
+    margin: 0 50px 0 0;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+  }
+  .radiobox input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+  }
+  .radiobox input[type="radio"]:checked + .ripple-container .radio-off {
+    border-color: #88D8AC;
+  }
+  .radiobox input[type="radio"]:checked + .ripple-container .radio-on {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .radiobox input[type="radio"]:checked + .ripple-container .ripple-on:before, .radiobox input[type="radio"]:checked + .ripple-container .ripple-on:after {
+    -webkit-transition: all 0.65s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -moz-transition: all 0.65s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.65s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0;
+  }
+  .radiobox input[type="radio"]:checked + .ripple-container .ripple-on:before {
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+    transform: scale(3);
+  }
+  .radiobox input[type="radio"]:checked + .ripple-container .ripple-on:after {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  .radiobox .ripple-container {
+    width: auto;
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    margin-right: 4px;
+    pointer-events: none;
+  }
+  .radiobox .ripple-container:before {
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    display: block;
+    height: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .radiobox .ripple-container .radio-off {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    border: 2px solid #c7c8ca;
+    transition: border-color ease 0.28s;
+  }
+  .radiobox .ripple-container .radio-on {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    transition: all 0s;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: #88D8AC;
+  }
+  .radiobox .ripple-container .ripple-on:before, .radiobox .ripple-container .ripple-on:after {
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    transition: all 0s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+  }
+  .radiobox .ripple-container .ripple-on:before {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .radiobox .ripple-container .ripple-on:after {
+    background-color: rgba(136, 216, 172, 0.6);
+  }
+  

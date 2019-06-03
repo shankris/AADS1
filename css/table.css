@@ -1,0 +1,84 @@
+
+.tableTitle {
+  padding:6px 0 4px 0;
+  display:block;
+}
+table.data1 {
+  width:95%;
+  margin:6px 4px 10px 20px;
+}
+
+table.data1 tr th {
+  background: rgb(216, 216, 216);
+  padding:3px 6px 3px 6px;
+  border-bottom: 1px solid rgb(51, 68, 144);
+  font-weight: 300;
+  font-size: 14px;
+  text-align: left;
+}
+
+table.data1 tr .divider {
+  background:rgb(240, 239, 239);
+  color:#5f5f5f;
+  font-size:16px;
+  padding: 4px 8px;
+}
+
+table.data1 tr td {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  font-size: 12px;
+  padding:3px 10px 2px 8px;
+}
+
+table.data1 tr td.num,
+table.data1 tr th.num {
+  text-align: right;
+}
+
+table.data1 tr:hover {
+  background: #fdfdd5 !important;
+}
+
+table.data1 tr .mailPreview {
+  background:rgb(236, 235, 235);
+}
+
+table.data1 tr td .email {
+  width:80px;
+  display:inline-block;
+}
+
+
+table.data1 tr td.emailView:hover {
+  background-color: #fafafa;
+}
+
+
+.fieldSet1 {
+  display:inline-block;
+  float:left;
+  padding:6px 0 16px 8px;
+}
+.field1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:12px;
+  padding: 0 0 0 20px;
+  margin:0;
+  color:#424242;
+}
+.fieldVal {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight:300;
+  font-size:20px;
+  margin:0;
+  padding: 0px 70px 0px 20px;
+  color:#8a8a8a;
+}
+.fieldVal2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:14px;
+  margin:0;
+  padding: 0px 40px 0px 20px;
+  color:#8a8a8a;
+}
